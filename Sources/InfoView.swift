@@ -42,7 +42,7 @@ class InfoView: UIVisualEffectView {
 
       label.text = status.text
       label.textColor = Info.textColor
-      label.font = stateStyles.font
+      label.font = UIFont(name: stateStyles.font.fontName, size: stateStyles.font.pointSize - 4.0)
       label.textAlignment = stateStyles.alignment
       imageView.tintColor = stateStyles.tint
       borderView.layer.borderColor = stateStyles.tint.cgColor
